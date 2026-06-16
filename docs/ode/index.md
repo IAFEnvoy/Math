@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 0
 ---
 
@@ -56,36 +56,36 @@ graph TD
 
 ## 章节导航
 
-### [一、一阶 ODE 解法](./01-first-order/)
+### [一、一阶 ODE 解法](./first-order/)
 
 变量分离、齐次方程、恰当方程，以及一阶线性方程的积分因子法和伯努利、黎卡提等可化为线性的特殊非线性方程。
 
-- [变量分离、齐次与恰当方程](./01-first-order/separable-homogeneous-exact.md)
-- [一阶线性方程（积分因子法）](./01-first-order/linear-first-order.md)
-- [伯努利方程与黎卡提方程](./01-first-order/bernoulli-riccati.md)
+- [变量分离、齐次与恰当方程](./first-order/separable-homogeneous-exact)
+- [一阶线性方程（积分因子法）](./first-order/linear-first-order)
+- [伯努利方程与黎卡提方程](./first-order/bernoulli-riccati)
 
-### [二、高阶线性 ODE](./02-higher-order/)
+### [二、高阶线性 ODE](./higher-order/)
 
 高阶线性方程的降阶法（已知一个特解求通解）和欧拉方程（通过变量替换化为常系数线性方程）。
 
-- [降阶法](./02-higher-order/reduction-of-order.md)
-- [欧拉方程](./02-higher-order/euler-equation.md)
+- [降阶法](./higher-order/reduction-of-order)
+- [欧拉方程](./higher-order/euler-equation)
 
-### [三、解的存在唯一性与延拓](./03-existence/)
+### [三、解的存在唯一性与延拓](./existence/)
 
 ODE 的理论基石——Picard 存在唯一性定理（局部 Lipschitz 条件保证局部唯一解）以及解的延拓定理。
 
-### [四、线性方程组与基解矩阵](./04-linear-systems/)
+### [四、线性方程组与基解矩阵](./linear-systems/)
 
 从标量方程推广到向量方程，核心是基解矩阵 $\Phi(t)$ 和常数变易公式。
 
-- [基解矩阵与齐次通解](./04-linear-systems/fundamental-matrix.md)
-- [常数变易法](./04-linear-systems/variation-of-constants.md)
+- [基解矩阵与齐次通解](./linear-systems/fundamental-matrix)
+- [常数变易法](./linear-systems/variation-of-constants)
 
-### [五、非线性系统与稳定性](./05-stability/)
+### [五、非线性系统与稳定性](./stability/)
 
 非线性系统通常无法求出解析解，转而进行定性分析。涵盖不动点分析、线性化方法（Hartman-Grobman 定理）、李雅普诺夫直接法以及极限集与庞加莱-本尼克松定理。
 
-- [不动点与线性化方法](./05-stability/fixed-points-linearization.md)
-- [李雅普诺夫直接法](./05-stability/lyapunov.md)
-- [极限集与极限环](./05-stability/limit-cycles.md)
+- [不动点与线性化方法](./stability/fixed-points-linearization)
+- [李雅普诺夫直接法](./stability/lyapunov)
+- [极限集与极限环](./stability/limit-cycles)

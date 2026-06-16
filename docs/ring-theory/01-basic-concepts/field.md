@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 4
 ---
 
@@ -31,7 +31,7 @@ $$\forall a \in F, a \neq 0, \exists a^{-1} \in F, \text{ 使 } aa^{-1} = a^{-1}
 - $\operatorname{char}(F) = 0 \Rightarrow F \supseteq \mathbb{Q}$（包含有理数域）
 - $\operatorname{char}(F) = p \Rightarrow F \supseteq \mathbb{F}_p$（包含 $p$ 元有限域）
 
-详见[特征与素域](../05-characteristic/)章节。
+详见[特征与素域](../characteristic/)章节。
 
 ## 域的扩张
 

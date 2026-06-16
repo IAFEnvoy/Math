@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 3
 ---
 
@@ -60,7 +60,7 @@ $$ab = 0 \Longrightarrow a = 0 \ \text{或}\ b = 0$$
 
 ## 整环的分式域
 
-任意整环可嵌入一个域——其**分式域**（Field of Fractions）。分式域是"最经济的域化"构造，详见[分式域](../07-field-of-fractions/)章节。
+任意整环可嵌入一个域——其**分式域**（Field of Fractions）。分式域是"最经济的域化"构造，详见[分式域](../field-of-fractions/)章节。
 
 例如：
 - $\mathbb{Q} = \operatorname{Frac}(\mathbb{Z})$

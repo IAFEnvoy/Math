@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 2
 ---
 
@@ -71,4 +71,4 @@ $$\pi: R \to R/I, \quad \pi(r) = r + I$$
 
 核：$\ker \pi = I$。这表明**每个理想都是某个同态的核**。
 
-详见[商环](../04-quotient-ring/)章节。
+详见[商环](../quotient-ring/)章节。

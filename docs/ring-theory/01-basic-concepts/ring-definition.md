@@ -1,4 +1,4 @@
----
+﻿---
 sidebar_position: 2
 ---
 
@@ -69,7 +69,7 @@ $R$ 中全体可逆元构成乘法群，记作 $R^{\times}$ 或 $U(R)$。
 
 $$\varphi(a + b) = \varphi(a) + \varphi(b), \quad \varphi(ab) = \varphi(a)\varphi(b)$$
 
-详见[环同态](../03-homomorphism/)章节。
+详见[环同态](../homomorphism/)章节。
 
 ## 常见例子
 

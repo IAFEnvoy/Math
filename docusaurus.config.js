@@ -44,8 +44,6 @@ const config = {
 
   markdown: { mermaid: true },
   themes: ['@docusaurus/theme-mermaid'],
-  // 引入自定义缩放脚本，无构建插件冲突
-  clientModules: [require.resolve('./src/client/mermaidZoom.js')],
 
   presets: [
     [
@@ -101,13 +99,6 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
           },
           {
             title: 'Community',
@@ -130,17 +121,13 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} IAFEnvoy. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
