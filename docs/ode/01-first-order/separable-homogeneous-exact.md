@@ -100,3 +100,75 @@ $M = 2xy + y^2$，$N = x^2 + 2xy$，检查 $\partial M/\partial y = 2x + 2y = \p
 $$u = \int M\,dx = x^2y + xy^2 + h(y), \quad \frac{\partial u}{\partial y} = x^2 + 2xy + h'(y) = N$$
 
 故 $h'(y) = 0$，$u(x, y) = x^2y + xy^2 = C$ 为通解。
+
+## 变量替换法
+
+除上述标准解法外，**变量替换**是最通用的化归策略——通过巧妙选取新变量，将"不标准"的方程化为已掌握的分离变量型或线性型。
+
+### 核心思想
+
+观察方程的对称结构，用一个组合量替换 $x$ 和 $y$，使方程在新变量下齐次或可分离。
+
+### 常用替换
+
+以下三种替换涵盖了大量可化归为一阶可解型的方程：
+
+#### 1. $u = \dfrac{y}{x}$（齐次方程的推广）
+
+当右端可写成仅依赖于 $\frac{y}{x}$ 的形式时使用（见上文齐次方程）。更一般地，形如
+
+$$\frac{dy}{dx} = \frac{a_1 x + b_1 y + c_1}{a_2 x + b_2 y + c_2}$$
+
+的方程，当 $\det\!\begin{pmatrix} a_1 & b_1 \\ a_2 & b_2 \end{pmatrix} \neq 0$ 时，先平移消去常数项，再令 $u = \frac{Y}{X}$ 化为齐次。
+
+#### 2. $u = y - x$（差型替换）
+
+适用形式：右端仅依赖于 $y - x$ 的方程
+
+$$\frac{dy}{dx} = f(y - x)$$
+
+令 $u = y - x$，则 $\dfrac{du}{dx} = \dfrac{dy}{dx} - 1$，代入得：
+
+$$\frac{du}{dx} + 1 = f(u) \quad\Longrightarrow\quad \frac{du}{f(u) - 1} = dx$$
+
+化为变量分离形式。
+
+**举例**：求解 $\dfrac{dy}{dx} = (y - x)^2$。
+
+令 $u = y - x$，$u' = y' - 1$，代入得 $u' + 1 = u^2$：
+
+$$\frac{du}{u^2 - 1} = dx \quad\Longrightarrow\quad \frac{1}{2}\ln\!\left|\frac{u-1}{u+1}\right| = x + C$$
+
+代回 $u = y - x$ 得隐式通解：
+
+$$\frac{y - x - 1}{y - x + 1} = C e^{2x}$$
+
+#### 3. $u = xy$（积型替换）
+
+适用形式：右端可重组为依赖于 $xy$ 的表达式的方程
+
+$$\frac{dy}{dx} = \frac{y}{x} \cdot g(xy)$$
+
+或更一般的乘积形式。令 $u = xy$，则 $y = \frac{u}{x}$，$\dfrac{dy}{dx} = \dfrac{x u' - u}{x^2}$，代入可化简。
+
+典型场景：形如 $x\dfrac{dy}{dx} + y = f(xy)$ 的方程（注意左端恰为 $(xy)'$），令 $u = xy$ 直接得：
+
+$$\frac{du}{dx} = f(u) \quad\Longrightarrow\quad \int \frac{du}{f(u)} = x + C$$
+
+**举例**：求解 $x\dfrac{dy}{dx} + y = 2xy$。
+
+注意到 $x y' + y = (xy)'$。令 $u = xy$：
+
+$$\frac{du}{dx} = 2u \quad\Longrightarrow\quad u = C e^{2x} \quad\Longrightarrow\quad y = \frac{C e^{2x}}{x}$$
+
+### 替换思路总结
+
+| 观察特征 | 选取替换 | 化归目标 |
+|---|---|---|
+| 右端为 $F(\frac{y}{x})$ | $u = \frac{y}{x}$ | 变量分离 |
+| 右端仅含 $y - x$ | $u = y - x$ | 变量分离 |
+| 方程含 $(xy)'$ 或可重组为 $F(xy)$ | $u = xy$ | 变量分离 |
+| 含 $ax+by$ 的线性组合 | $u = ax+by$ | 变量分离 |
+| 伯努利 $y' + Py = Qy^n$ | $v = y^{1-n}$ | 一阶线性 |
+
+**核心策略**：找到一个组合量 $u$，使原方程在新变量下的形式比原变量更简单——通常是化为可分离变量型或线性型。

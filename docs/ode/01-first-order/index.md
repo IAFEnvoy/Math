@@ -11,6 +11,7 @@ graph TB
     FO[一阶 ODE] -->|"dy/dx = f(x)·g(y)"| Sep[变量分离法]
     FO -->|"dy/dx + P(x)y = Q(x)"| Linear[一阶线性<br/>积分因子法]
     FO -->|"Mdx + Ndy = 0"| Exact[恰当方程]
+    FO -->|"u = y/x, u = y-x, u = xy"| Sub[变量替换法<br/>化归为标准型]
     Linear -->|"y = u·v 变换"| Bernoulli[伯努利方程<br/>可化为线性]
     Bernoulli -->|可化为线性| Linear2[一阶线性]
     Linear -->|已知特解后| Riccati[黎卡提方程<br/>可化为线性]
@@ -20,7 +21,7 @@ graph TB
 
 ## 子主题
 
-- [变量分离、齐次与恰当方程](./separable-homogeneous-exact.md)
-- [一阶线性方程（积分因子法）](./linear-first-order.md)
-- [伯努利方程与黎卡提方程](./bernoulli-riccati.md)
-- [参数表示法](./parametric-form.md)
+- [变量分离、齐次与恰当方程](./separable-homogeneous-exact)
+- [一阶线性方程（积分因子法）](./linear-first-order)
+- [伯努利方程与黎卡提方程](./bernoulli-riccati)
+- [参数表示法](./parametric-form)
