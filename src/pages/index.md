@@ -10,5 +10,6 @@ import { Entry } from '@site/src/components/Cards';
 		<Entry link="/docs/ring-theory" name="环论" content=""/>
 		<Entry link="/docs/probability-theory" name="概率论" content=""/>
 		<Entry link="/docs/ode" name="常微分方程" content=""/>
+		<Entry link="/docs/algebra" name="" content=""/>
     </div>
 </section>

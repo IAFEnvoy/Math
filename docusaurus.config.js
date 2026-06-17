@@ -7,6 +7,7 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import remarkDisableEscape from 'remark-disable-text-escape';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -22,15 +23,15 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://math.iafenvoy.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'IAFEnvoy', // Usually your GitHub org/user name.
+  projectName: 'Math', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -52,7 +53,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          beforeDefaultRemarkPlugins: [remarkMath],
+          beforeDefaultRemarkPlugins: [remarkDisableEscape, remarkMath],
           rehypePlugins: [rehypeKatex],
           // 显式保留全部内置提示框关键字，防止失效
           admonitions: {
@@ -89,7 +90,7 @@ const config = {
             label: 'Main',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/IAFEnvoy/Math',
             label: 'GitHub',
             position: 'right',
           },
@@ -97,36 +98,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
+        links: [],
         copyright: `Copyright © ${new Date().getFullYear()} IAFEnvoy. Built with Docusaurus.`,
       },
       prism: {

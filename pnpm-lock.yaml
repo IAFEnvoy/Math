@@ -41,6 +41,9 @@ importers:
       rehype-katex:
         specifier: ^7.0.1
         version: 7.0.1
+      remark-disable-text-escape:
+        specifier: ^1.7.0
+        version: 1.7.0(remark-stringify@11.0.0)
       remark-math:
         specifier: ^6.0.0
         version: 6.0.0
@@ -5103,6 +5106,11 @@ packages:
 
   remark-directive@3.0.1:
     resolution: {integrity: sha512-gwglrEQEZcZYgVyG1tQuA+h58EZfq5CSULw7J90AFuCTyib1thgHPoqQ+h9iFvU6R+vnZ5oNFQR5QKgGpk741A==}
+
+  remark-disable-text-escape@1.7.0:
+    resolution: {integrity: sha512-qFaY8eB/Qg/QOVbQ6iWjjOMAlwU6PnNs3u6vUG2sXBkeZfM/isKxKK5JPgN92ZPZOlYPQamIF9fVsZyayK1+Ew==}
+    peerDependencies:
+      remark-stringify: ^11.0.0
 
   remark-emoji@4.0.1:
     resolution: {integrity: sha512-fHdvsTR1dHkWKev9eNyhTo4EFwbUvJ8ka9SgeWkMPYFX4WoI7ViVBms3PjlQYgw5TLvNQso3GUB/b/8t3yo+dg==}
@@ -12712,6 +12720,11 @@ snapshots:
       unified: 11.0.5
     transitivePeerDependencies:
       - supports-color
+
+  remark-disable-text-escape@1.7.0(remark-stringify@11.0.0):
+    dependencies:
+      remark-stringify: 11.0.0
+      unist-util-visit: 5.1.0
 
   remark-emoji@4.0.1:
     dependencies:
