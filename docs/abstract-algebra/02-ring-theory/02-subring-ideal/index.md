@@ -19,6 +19,7 @@ graph TB
 
 ## 子主题
 
-- [子环](./subring.md)
-- [理想](./ideal.md)
-- [理想的类型：主理想、素理想、极大理想](./ideal-types.md)
+- [子环](./subring)
+- [理想](./ideal)
+- [理想的类型：主理想、素理想、极大理想](./ideal-types)
+- [极大理想求法、根理想与 CRT](./radical-crt-maximal)

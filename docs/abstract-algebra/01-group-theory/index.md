@@ -70,6 +70,7 @@ graph LR
 - [子群](./basic-concepts/subgroup)
 - [陪集与 Lagrange 定理](./basic-concepts/coset)
 - [正规子群](./basic-concepts/normal-subgroup)
+- [子群乘积与正规子群验证](./basic-concepts/subgroup-product)
 
 ### [二、群同态与同构](./homomorphism/)
 

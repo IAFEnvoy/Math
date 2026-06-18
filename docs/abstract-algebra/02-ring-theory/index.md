@@ -61,6 +61,7 @@ graph TD
 - [子环](./subring-ideal/subring)
 - [理想](./subring-ideal/ideal)
 - [理想的类型：主理想、素理想、极大理想](./subring-ideal/ideal-types)
+- [极大理想求法、根理想与 CRT](./subring-ideal/radical-crt-maximal)
 
 ### [三、环同态与同构](./homomorphism/)
 

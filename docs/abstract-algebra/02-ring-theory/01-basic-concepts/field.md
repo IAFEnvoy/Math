@@ -57,3 +57,5 @@ $$\forall a \in F, a \neq 0, \exists a^{-1} \in F, \text{ 使 } aa^{-1} = a^{-1}
 | $\mathbb{F}_{p^n}$ | $p$ | $p^n$ 元有限域 |
 | $F(x)$ | 同 $F$ | $F$ 上有理函数域 |
 | $\mathbb{Q}(\sqrt{2})$ | $0$ | $\mathbb{Q}$ 的二次扩域 |
+
+**补充阅读**：域的深入内容（域扩张、有限域、Galois 理论）详见[域论](../../field-theory/)章节。
